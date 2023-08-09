@@ -50,3 +50,98 @@ int main(){
         
     }
 }
+
+3. INI Nomor 3
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    typedef int matrix1[2] [2];
+    matrix1 a,b;
+    cout<<"Silahkan masukkan nilai"<<endl;
+    cout<<"Program perkalian matrix 2X2\n";
+    cout<<"MAsukkan Nilai a \n";
+    for(int i=0;i<2; i++){
+         cout<<"baris "<<i+1<<endl;
+        for(int j=0;j<2; j++){
+            cout<<"A "<<"["<<i<<"] ["<<j<<"] : ";cin>>a[i][j];
+        }
+    }
+    cout<<"Masukan Nilai B \n";
+      for(int i=0;i<2; i++){
+         cout<<"baris "<<i+1<<endl;
+        for(int j=0;j<2; j++){
+            cout<<"B "<<"["<<i<<"] ["<<j<<"] : ";cin>>b[i][j];
+        }
+    }
+    cout<<endl;
+    for(int i=0;i<2; i++){
+        for(int j=0;j<1; j++){
+            cout<<" | "<<a[i][j]<<"  "<<a[i][j+1]<<" | ";;
+        }
+        for(int j=0;j<1; j++){
+            cout<<" | "<<b[i][j]<<"  "<<b[i][j+1]<<" | ";;
+        }
+        cout<<endl;
+    }
+    cout<<"\njawaban \n";
+    for (int i = 0; i < 2; i++)
+    {
+        for ( int j = 0; j < 2; j++)
+        {
+            cout<<" "<<a[i][j]*b[i][j]<<" ";
+        }
+        cout<<"\n";;
+        
+    }
+}
+
+
+4. INI NOMOR 4
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    typedef int matrix1[3] [3];
+    matrix1 a,b;
+    cout<<"Silahkan masukkan nilai"<<endl;
+    cout<<"Program penjumlahan matrix 2X2\n";
+    cout<<"MAsukkan Nilai a \n";
+    for(int i=0;i<3; i++){
+        cout<<"baris "<<i+1<<endl;
+        for(int j=0;j<3; j++){
+            cout<<"A "<<"["<<i<<"] ["<<j<<"] : ";cin>>a[i][j];
+        }
+    }
+    cout<<"Masukan Nilai B \n";
+      for(int i=0;i<3; i++){
+         cout<<"baris "<<i+1<<endl;
+        for(int j=0;j<3; j++){
+            cout<<"B "<<"["<<i<<"] ["<<j<<"] : ";cin>>b[i][j];
+        }
+    }
+    cout<<"\n";
+    for(int i=0;i<3; i++){
+        for(int j=0;j<3; j++){
+            cout<<" "<<a[i][j]<<"  ";;
+        }
+        cout<<" | ";
+        for(int j=0;j<3; j++){
+            cout<<"  "<<b[i][j]<<"  ";;
+        }
+        cout<<endl;
+    } cout<<"\njawaban \n";
+    for (int i = 0; i < 3; i++)
+    {
+        for ( int j = 0; j < 3; j++)
+        {
+            cout<<" "<<a[i][j]+b[i][j]<<" ";
+        }
+        cout<<"\n";;
+        
+    }
+    
+}
